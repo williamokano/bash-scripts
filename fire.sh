@@ -1,6 +1,6 @@
 #!/bin/bash
+BRANCH=$(date | md5sum)-fire
 
-$BRANCH=$(date | md5sum)-fire
 git checkout -b $BRANCH
 
 git add -A
