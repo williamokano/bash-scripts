@@ -8,3 +8,6 @@ Just get the current branch name and create a new one based on the name of the c
 
 #gpush
 Execute `git push -u origin $BRANCH_NAME` where `$BRANCH_NAME` is the current branch
+
+# gfp
+Execute `git fetch -p` then stash your changes, pull the current branch with rebase and then re-apply your stash.
