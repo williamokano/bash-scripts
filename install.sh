@@ -13,3 +13,4 @@ function installCommand {
 }
 
 installCommand "FIRE" "fire" "git/fire.sh"
+installCommand "GIT NEW BRANCH PREPEND" "gchecknew" "git/gchecknew.sh"
