@@ -13,6 +13,6 @@ function installCommand {
 }
 
 installCommand "FIRE" "fire" "git/fire.sh"
-installCommand "GIT NEW BRANCH PREPEND" "gchecknew" "git/gchecknew.sh"
+installCommand "GBRANCHNEW" "gbranchnew" "git/gbranchnew.sh"
 installCommand "GIT PUSH" "gpush" "git/gpush.sh"
 installCommand "GIT GFP" "gfp" "git/gfp.sh"
