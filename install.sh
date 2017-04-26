@@ -1,10 +1,15 @@
 #!/bin/bash
 BIN_DIR=/usr/local/bin
 
-if [ -f $BIN_DIR/fire ]; then
-    rm $BIN_DIR/fire
-fi
+function installCommand {
+    COMMAND_NAME=$1
+    COMMAND_ALIAS=$2
+    SCRIPT_PATH=$3
+    COMMAND_PATH="$BIN_DIR/$COMMAND_ALIAS"
+    echo "INSTALLING $COMMAND_NAME"
+    rm $COMMAND_PATH > /dev/null 2>&1
+    chmod +x ./$SCRIPT_PATH
+    ln -s $(pwd)/$SCRIPT_PATH $BIN_DIR/$COMMAND_ALIAS
+}
 
-echo "INSTALLING FIRE"
-chmod +x ./fire.sh
-ln -s $(pwd)/fire.sh $BIN_DIR/fire
+installCommand "FIRE" "fire" "git/fire.sh"
