@@ -11,3 +11,7 @@ Execute `git push -u origin $BRANCH_NAME` where `$BRANCH_NAME` is the current br
 
 # gfp
 Execute `git fetch -p` then stash your changes, pull the current branch with rebase and then re-apply your stash.
+
+# gaacop
+It will do `git add -A`, `git commit -m "Your message"`, `gpush` (execute push on the current branch).
+Example: `gaacop "Added gaacop command"`
