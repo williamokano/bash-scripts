@@ -1,5 +1,5 @@
 #!/bin/bash
-FORCED = $1;
+FORCED=$1;
 
 BRANCH_NAME=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 
@@ -9,7 +9,9 @@ else
 	if [ $FORCED == '-f' ]; then
 		git push -u -f origin $BRANCH_NAME
 	else
-		echo "Parameter < $FORCED > not recognized."
+		echo "Parameter < $FORCED > not recognized"
 		exit 1
 	fi
 fi
+
+git push -u origin $BRANCH_NAME
