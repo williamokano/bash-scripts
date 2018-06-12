@@ -24,7 +24,7 @@ if [ -d Postman ]; then
     rm -rf Postman
 fi
 
-if [ -f Postman*.tar.gz ]; then
+if [ ! -f Postman*.tar.gz ]; then
     echo "WTF? Where is the file?"
     exit 1;
 fi
