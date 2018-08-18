@@ -4,7 +4,7 @@ BRANCH="$(date | md5sum | awk '{print $1}')-fire"
 git checkout -b $BRANCH
 
 git add -A
-git commit -m 'FIRE! FIRE! FIRE!'
+git commit -m '🔥 FIRE! 🔥 FIRE! 🔥 FIRE!'
 git push -u origin $BRANCH
 
-echo "FIRE! FIRE! FIRE! $BRANCH"
+echo "🔥 FIRE! 🔥 FIRE! 🔥 FIRE! 🔥 $BRANCH"
